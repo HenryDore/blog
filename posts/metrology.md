@@ -14,4 +14,4 @@ And that's why it drives me mad when I'm on a 3D printing forum or social media 
 
 [2]: https://www.pemnet.com/fastening_products/pdf/sidata.pdf#page=16 "SI Threaded inserts for plastics"
 
-<sub>1</sub> don't do this
+<sub>1</sub> Don't do this. There are multiple other points of failure, including the bulk material around the insert and your puny M3 bolt.
