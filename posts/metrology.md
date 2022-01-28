@@ -33,14 +33,19 @@ So we know what size measured hole we will get for a nominal diameter. Let's rea
 
 `x = e^(10000y+6223/2307)`
 
-We could also have swapped the X and Y axes in excel and asked it to give us another trendline, but hey. Now for a bit more trial and error. I upped the thickness of the test piece to 3.6 mm to give some bulk to screw a bolt into and printed a bunch of samples at varying thicknesses based around a 5mm bolt (5.1 mm, 5.0 mm, 4.9mm, 4.8mm etc.) and just started screwing stuff in. With a rig to test pullout forces, and a digital torque wrench I could properly quantify this, but I refer you the hanging elephant above and let's just call it good enough.
+We could also have swapped the X and Y axes in excel and asked it to give us another trendline, but hey. Now for a bit more trial and error. I upped the thickness of the test piece to 3.6 mm to give some bulk to screw a bolt into and printed a bunch of samples at varying thicknesses based around a 5mm bolt (5.1 mm, 5.0 mm, 4.9mm, 4.8mm etc.) and just started screwing stuff in. With a rig to test pullout forces, and a digital torque wrench I could properly quantify this, but I refer you the hanging elephant above and let's just call it good enough. Here's my best guess at a range of fits:
 
 |Fit | Diameter |
 | ----------- | ----------- |
-| Tight | Nominal - 0.4 |
-| Medium | Nominal - 0.3 |
-| Loose | Nominal - 0.2 |
-| Close clearance | Nominal + 0.1 |
+| Tight | Bolt size - 0.4 |
+| Medium | Bolt size - 0.3 |
+| Very Loose | Bolt size - 0.2 |
+| Close clearance | Bolt size + 0.1 |
+
+So for an M3 Medium fit hole you'd need a 2.7 mm hole. So with our fancy equation for calculating the CAD diameter to achieve a specific printed hole size we can draw up a table:
+
+
+
 
 [1]: https://www.rawlplug.co.uk/wp-content/uploads/2020/03/Rawlplug_catalogue_Specification_Design_Guide_2020_compressed.pdf#page135 "Specification & Design Guide, Rawlplug"
 
