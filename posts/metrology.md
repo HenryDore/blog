@@ -21,7 +21,7 @@ The list just goes on and on frankly, and some of these variable are difficult o
 
 This took 1 minute (after pre warming) to print on my Ender 3 V2, so it's really quick to iterate and I can bang out sample pieces really quickly. The layers of plastic laid down by my printer (layer height) is 0.2 mm and the lines of plastic it lays down to build up material are 0.4 mm thick, my dimensions reflet this, in theat the wall of the test holes are 1.2 mm thick meaning the software will put down exactly 3 lines around each hole, and it won't get confused. Once printed I took a pair of cheap calipers and measure the internal diameters of the holes, and compared the measured size after printing to the nominal size in the CAD software:
 
-![results](../images/metrology_2.svg)
+![results](../images/metrology_results.svg)
 
 [1]: https://www.rawlplug.co.uk/wp-content/uploads/2020/03/Rawlplug_catalogue_Specification_Design_Guide_2020_compressed.pdf#page135 "Specification & Design Guide, Rawlplug"
 
