@@ -33,4 +33,5 @@ The dotted line orange line shows a logarithmic trendline, and the equation for 
 [2]: https://www.pemnet.com/fastening_products/pdf/sidata.pdf#page=16 "SI Threaded inserts for plastics"
 
 <sub>1</sub> Don't do this. There are multiple other points of failure, including the bulk material around the insert and your puny M3 bolt.
+
 <sub>2</sub> Above 10mm nominal radius holes the variance was always 0.1 mm. You often see the figure 0.1 mm in 3D printing guides when talking about tolerance and clearance, and this is why.
