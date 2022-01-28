@@ -23,8 +23,14 @@ This took 1 minute (after pre warming) to print on my Ender 3 V2, so it's really
 
 ![results](../images/metrology_results.svg)
 
+The blue line appears to show a linear relationship between nominal and measured size, but this isn't the whole story. Subtracting the nominal size from the measured size gives us the variance, the "overspill" of the printer if you like. This shows a logarithmic relationship. And this gets to the whole point of the issue. FDM printers suck at small details<sub>2</sub>, especially circles, like 3mm bolt holes. I'm sure this is something to do with the squeezing of the heated thermoplastic out of the extruder and the geometric properties of circles, but I'm not going to get into it. Suffice to say that the smaller the hole you tell the printer to print, the more *out of whack* it is.
+
+The dotted line orange line shows a logarithmic trendline, and the equation for this (handily provided by Excel) is:
+`y = 0.2307ln(x) - 0.6223`
+
 [1]: https://www.rawlplug.co.uk/wp-content/uploads/2020/03/Rawlplug_catalogue_Specification_Design_Guide_2020_compressed.pdf#page135 "Specification & Design Guide, Rawlplug"
 
 [2]: https://www.pemnet.com/fastening_products/pdf/sidata.pdf#page=16 "SI Threaded inserts for plastics"
 
 <sub>1</sub> Don't do this. There are multiple other points of failure, including the bulk material around the insert and your puny M3 bolt.
+<sub>2</sub> Above 10mm nominal radius holes the variance was always 0.1 mm. You often see the figure 0.1 mm in 3D printing guides when talking about tolerance and clearance, and this is why.
