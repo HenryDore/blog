@@ -26,7 +26,15 @@ This took 1 minute (after pre warming) to print on my Ender 3 V2, so it's really
 The blue line appears to show a linear relationship between nominal and measured size, but this isn't the whole story. Subtracting the nominal size from the measured size gives us the variance, the "overspill" of the printer if you like. This shows a logarithmic relationship. And this gets to the whole point of the issue. FDM printers suck at small details<sub>2</sub>, especially circles, like 3mm bolt holes. I'm sure this is something to do with the squeezing of the heated thermoplastic out of the extruder and the geometric properties of circles, but I'm not going to get into it. Suffice to say that the smaller the hole you tell the printer to print, the more *out of whack* it is.
 
 The dotted line orange line shows a logarithmic trendline, and the equation for this (handily provided by Excel) is:
+
 `y = 0.2307ln(x) - 0.6223`
+
+So we know what size measured hole we will get for a nominal diameter. Let's rearrange that to find X for a given Y, so we can specify the hole size in CAD and get an accurate representation:
+
+`x = e^(10000y+6223/2307)`
+
+We could also have swapped the X and Y axes in excel and asked it to give us another trendline, but hey.
+
 
 [1]: https://www.rawlplug.co.uk/wp-content/uploads/2020/03/Rawlplug_catalogue_Specification_Design_Guide_2020_compressed.pdf#page135 "Specification & Design Guide, Rawlplug"
 
