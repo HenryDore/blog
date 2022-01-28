@@ -29,11 +29,19 @@ The dotted line orange line shows a logarithmic trendline, and the equation for 
 
 `y = 0.2307ln(x) - 0.6223`
 
-So we know what size measured hole we will get for a nominal diameter. Let's rearrange that to find X for a given Y, so we can specify the hole size in CAD and get an accurate representation:
+So we know what size measured hole we will get for a nominal diameter. Let's rearrange that to find X for a given Y, so we can specify a printed diameter and get the required nominal hole size to put into CAD to achieve this in the printed piece:
 
 `x = e^(10000y+6223/2307)`
 
-We could also have swapped the X and Y axes in excel and asked it to give us another trendline, but hey.
+We could also have swapped the X and Y axes in excel and asked it to give us another trendline, but hey. Now for a bit more trial and error. I upped the thickness of the test piece to 3.6 mm to give some bulk to screw a bolt into and printed a bunch of samples at varying thicknesses based around a 5mm bolt (5.1 mm, 5.0 mm, 4.9mm, 4.8mm etc.) and just started screwing stuff in. With a rig to test pullout forces, and a digital torque wrench I could properly quantify this, but I refer you the hanging elephant above and let's just call it good enough.
+|Fit| Diameter|
+| ----------- | ----------- |
+
+| Tight | Nominal - 0.4 |
+| Medium | Nominal - 0.3 |
+| Loose | Nominal - 0.2 |
+| Close clearance | Nominal + 0.1 |
+
 
 
 [1]: https://www.rawlplug.co.uk/wp-content/uploads/2020/03/Rawlplug_catalogue_Specification_Design_Guide_2020_compressed.pdf#page135 "Specification & Design Guide, Rawlplug"
