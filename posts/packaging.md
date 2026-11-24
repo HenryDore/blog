@@ -5,7 +5,8 @@ Brighton and Hove have finally expanded the items they collect for recycling to 
 When it comes to supermarket fresh fruit and vegetables we have a few choices:
 | Material | Recyclable? | Compostable? | Weight |
 |---------|-------------|----------|----------|
-| Paper bag | Yes | | Yes | Low |
+| Paper bag | Yes | Yes | Low |
 | Plastic bag | Sometimes | No | Low |
 | Cardboard container | Yes | Yes |Medium |
 | Plastic carton | Sometimes | No | Medium |
+| Tetrapack | Sometimes | No | High |
