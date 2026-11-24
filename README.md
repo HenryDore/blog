@@ -1,5 +1,8 @@
 # blog
 
+## packaging
+[Damn son that's a lot]([posts/packacging.md "packaging")
+
 ## metrology
 [Inserts for 3D printing? No thanks.](posts/metrology.md "metrology")
 
